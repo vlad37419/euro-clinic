@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/js/build/mask.js"></script>
+    <script defer src="assets/js/main.js"></script>
+    <title>Главная</title>
+</head>
+
+<body>
+    <div class="contraindications">
+        <div class="contraindications__container container">
+            <p class="contraindications__text">
+                Имеются противопоказания, необходимо проконсультироваться со специалистом.&nbsp;<span
+                    class="contraindications__decor">18+</span>
+            </p>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header__top">
+            <div class="header__top-container container">
+                <div class="header__top-item">
+                    <a href="/" class="header__logo logo">
+                        <picture class="logo__picture">
+                            <img src="assets/img/logo.svg" alt="" class="logo__img">
+                        </picture>
+                    </a>
+                    <button class="header__address popup-btn" data-path="city">
+                        <svg class="header__address-icon" width="21" height="25" viewBox="0 0 21 25" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.9375 11.021C6.9375 11.968 7.31283 12.8761 7.98093 13.5457C8.64903 14.2153 9.55517 14.5915 10.5 14.5915C11.4448 14.5915 12.351 14.2153 13.0191 13.5457C13.6872 12.8761 14.0625 11.968 14.0625 11.021C14.0625 10.074 13.6872 9.16587 13.0191 8.49627C12.351 7.82667 11.4448 7.45049 10.5 7.45049C9.55517 7.45049 8.64903 7.82667 7.98093 8.49627C7.31283 9.16587 6.9375 10.074 6.9375 11.021Z"
+                                stroke="#013BDD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M17.2177 17.7538L12.1791 22.8037C11.7338 23.2495 11.1301 23.5 10.5006 23.5C9.87112 23.5 9.26739 23.2495 8.82206 22.8037L3.78232 17.7538C2.45377 16.4222 1.54903 14.7256 1.18251 12.8787C0.815988 11.0317 1.00415 9.11734 1.7232 7.37757C2.44224 5.6378 3.65988 4.1508 5.22214 3.1046C6.78439 2.0584 8.6211 1.5 10.5 1.5C12.3789 1.5 14.2156 2.0584 15.7779 3.1046C17.3401 4.1508 18.5578 5.6378 19.2768 7.37757C19.9959 9.11734 20.184 11.0317 19.8175 12.8787C19.451 14.7256 18.5462 16.4222 17.2177 17.7538Z"
+                                stroke="#013BDD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p class="header__address-text">
+                            Краснодар, улица Красная, 103
+                        </p>
+                    </button>
+                </div>
+                <div class="header__top-item">
+                    <div class="header__phones">
+                        <a href="tel:89282923058" class="header__phone">8 (928) 292-30-58</a>
+                        <a href="tel:89282923058" class="header__phone">8 (928) 292-30-58</a>
+                    </div>
+                    <ul class="header__socials socials">
+                        <li class="socials__item social">
+                            <a href="#" target="_blank" class="social__link">
+                                <svg width="37" height="41" viewBox="0 0 37 41" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.5 0.5C8.26333 0.5 0 8.875 0 19.25C0 23.5 1.35667 27.5 3.94667 30.75L1.35667 38.75C1.23333 39.25 1.35667 39.75 1.72667 40.125C1.85 40.375 2.22 40.5 2.46667 40.5C2.59 40.5 2.83667 40.5 2.96 40.375L11.47 36.5C13.69 37.5 16.0333 38 18.5 38C28.7367 38 37 29.625 37 19.25C37 8.875 28.7367 0.5 18.5 0.5Z"
+                                        fill="#25D366" />
+                                    <path
+                                        d="M29.23 26.125C28.7367 27.625 26.8867 28.875 25.2833 29.125C24.9133 29.25 24.5433 29.25 24.05 29.25C23.0633 29.25 21.5833 29 18.9933 27.875C16.0333 26.625 13.0733 24 10.73 20.625V20.5C9.99 19.375 8.63333 17.25 8.63333 15C8.63333 12.25 9.99 10.875 10.4833 10.25C11.1 9.625 11.9633 9.25 12.95 9.25C13.1967 9.25 13.32 9.25 13.5667 9.25C14.43 9.25 15.0467 9.5 15.6633 10.75L16.1567 11.75C16.5267 12.75 17.02 13.875 17.1433 14C17.5133 14.75 17.5133 15.375 17.1433 16C17.02 16.375 16.7733 16.625 16.5267 16.875C16.4033 17.125 16.28 17.25 16.1567 17.25C16.0333 17.375 16.0333 17.375 15.91 17.5C16.28 18.125 17.02 19.25 18.0067 20.125C19.4867 21.5 20.5967 21.875 21.2133 22.125C21.46 21.875 21.7067 21.375 22.0767 21L22.2 20.75C22.8167 19.875 23.8033 19.625 24.79 20C25.2833 20.25 27.9967 21.5 27.9967 21.5L28.2433 21.625C28.6133 21.875 29.1067 22 29.3533 22.5C29.8467 23.625 29.4767 25.25 29.23 26.125Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item social">
+                            <a href="#" target="_blank" class="social__link">
+                                <svg width="40" height="41" viewBox="0 0 40 41" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20 0.5C8.95422 0.5 0 9.45422 0 20.5C0 31.5458 8.95422 40.5 20 40.5C31.0458 40.5 40 31.5458 40 20.5C40 9.45422 31.0458 0.5 20 0.5Z"
+                                        fill="#40B3E0" />
+                                    <path
+                                        d="M29.7317 12.0048L26.1595 30.0153C26.1595 30.0153 25.6599 31.2643 24.286 30.6648L16.0426 24.3448L13.0451 22.8961L7.99916 21.1973C7.99916 21.1973 7.22478 20.9226 7.14978 20.3231C7.07494 19.7236 8.02416 19.3989 8.02416 19.3989L28.0829 11.5301C28.0829 11.5301 29.7317 10.8057 29.7317 12.0048Z"
+                                        fill="white" />
+                                    <path
+                                        d="M15.409 29.813C15.409 29.813 15.1684 29.7905 14.8686 28.8412C14.5689 27.892 13.0451 22.896 13.0451 22.896L25.1603 15.2023C25.1603 15.2023 25.8598 14.7776 25.8348 15.2023C25.8348 15.2023 25.9597 15.2771 25.585 15.6268C25.2103 15.9766 16.0676 24.1949 16.0676 24.1949"
+                                        fill="#D2E5F1" />
+                                    <path
+                                        d="M19.2034 26.768L15.9427 29.7408C15.9427 29.7408 15.6879 29.9343 15.409 29.813L16.0334 24.291"
+                                        fill="#B5CFE4" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="header__btn btn popup-btn" data-path="form">
+                        Записаться на прием
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="header__bottom-container container">
+                <div class="header__navigation">
+                    <div class="header__navigation-wrapper">
+                        <button class="header__nav-btn">
+                            <span class="header__nav-btn-text">
+                                Услуги
+                            </span>
+                            <span class="header__nav-btn-decor">
+                                <span class="header__nav-btn-decor-line"></span>
+                            </span>
+                        </button>
+                        <div class="header__navigation-dropdown tabs-container">
+                            <div class="header__navigation-tabs tabs">
+                                <div class="tabs__container">
+                                    <div class="tabs__content">
+                                        <div class="tabs__wrapper">
+                                            <button class="tabs__close">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M17 1L1 17" stroke="#B0BBCE" stroke-width="1.5"></path>
+                                                    <path d="M17 17L1 1" stroke="#B0BBCE" stroke-width="1.5"></path>
+                                                </svg>
+                                            </button>
+                                            <button class="tabs__item tab">
+                                                <span class="tab__icon" data-src="/netcat_files/594_254.svg"
+                                                    style="-webkit-mask-image: url(/netcat_files/594_254.svg);mask-image: url(/netcat_files/594_254.svg);"></span>
+                                                <span class="tab__text">
+                                                    Вывод из запоя
+                                                </span>
+                                            </button>
+                                            <button class="tabs__item tab">
+                                                <span class="tab__icon" data-src="/netcat_files/594_254.svg"
+                                                    style="-webkit-mask-image: url(/netcat_files/594_254.svg);mask-image: url(/netcat_files/594_254.svg);"></span>
+                                                <span class="tab__text">
+                                                    Лечение алкоголизма
+                                                </span>
+                                            </button>
+                                            <button class="tabs__item tab">
+                                                <span class="tab__icon" data-src="/netcat_files/594_254.svg"
+                                                    style="-webkit-mask-image: url(/netcat_files/594_254.svg);mask-image: url(/netcat_files/594_254.svg);"></span>
+                                                <span class="tab__text">
+                                                    Кодирование
+                                                    от алкоголизма
+                                                </span>
+                                            </button>
+                                            <button class="tabs__item tab">
+                                                <span class="tab__icon" data-src="/netcat_files/594_254.svg"
+                                                    style="-webkit-mask-image: url(/netcat_files/594_254.svg);mask-image: url(/netcat_files/594_254.svg);"></span>
+                                                <span class="tab__text">
+                                                    Наркологическая помощь
+                                                </span>
+                                            </button>
+                                            <button class="tabs__item tab">
+                                                <span class="tab__icon" data-src="/netcat_files/594_254.svg"
+                                                    style="-webkit-mask-image: url(/netcat_files/594_254.svg);mask-image: url(/netcat_files/594_254.svg);"></span>
+                                                <span class="tab__text">
+                                                    Лечение наркомании
+                                                </span>
+                                            </button>
+                                            <button class="tabs__item tab">
+                                                <span class="tab__icon" data-src="/netcat_files/594_254.svg"
+                                                    style="-webkit-mask-image: url(/netcat_files/594_254.svg);mask-image: url(/netcat_files/594_254.svg);"></span>
+                                                <span class="tab__text">
+                                                    Реабилитационный центр
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__navigation-content">
+                                <div class="header__navigation-item tab-content">
+                                    <ul class="header__navigation-list">
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Вшивание ампулы
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Кодирование Эспераль
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Принудительное кодирование
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Кодирование на дому
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Кодирование уколом
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Анонимное кодирование
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Кодирование по методу Довженко
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Кодирование гипнозом
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Вшивание ампулы
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Вшивание ампулы
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Вшивание ампулы
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Вшивание ампулы
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Вшивание ампулы
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Вшивание ампулы
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Вшивание ампулы
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="header__navigation-item tab-content">
+                                    <ul class="header__navigation-list">
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Вшивание ампулы
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Кодирование Эспераль
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Принудительное кодирование
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Кодирование на дому
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Кодирование уколом
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Анонимное кодирование
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Кодирование по методу Довженко
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Вшивание ампулы
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Вшивание ампулы
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Вшивание ампулы
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Вшивание ампулы
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Вшивание ампулы
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="header__navigation-item tab-content">
+                                    <ul class="header__navigation-list">
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Вшивание ампулы
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Кодирование Эспераль
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="header__navigation-item tab-content">
+                                    <ul class="header__navigation-list">
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Вшивание ампулы
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Кодирование Эспераль
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Принудительное кодирование
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Кодирование на дому
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Кодирование уколом
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Анонимное кодирование
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Кодирование по методу Довженко
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Кодирование гипнозом
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Вшивание ампулы
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Вшивание ампулы
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="header__navigation-item tab-content">
+                                    <ul class="header__navigation-list">
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Вшивание ампулы
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Кодирование Эспераль
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Принудительное кодирование
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Кодирование гипнозом
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Вшивание ампулы
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Вшивание ампулы
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Вшивание ампулы
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Вшивание ампулы
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Вшивание ампулы
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Вшивание ампулы
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Вшивание ампулы
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="header__navigation-item tab-content">
+                                    <ul class="header__navigation-list">
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Вшивание ампулы
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Кодирование Эспераль
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Принудительное кодирование
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Кодирование на дому
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Кодирование уколом
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Анонимное кодирование
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Кодирование по методу Довженко
+                                            </a>
+                                        </li>
+                                        <li class="header__navigation-nav-item">
+                                            <a href="#" class="header__navigation-nav-link">
+                                                Кодирование гипнозом
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="/search/" method="post" class="header__search">
+                        <label class="header__search-item">
+                            <input name="s" type="text" class="header__search-input" placeholder="Поиск">
+                        </label>
+                        <button type="submit" class="header__search-btn"></button>
+                    </form>
+                </div>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                Цены
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                Документы
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                Вопросы
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                Акции
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                Врачи
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                Статьи
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main"></main>
+    <footer class="footer"></footer>
+    <div data-target="city" class="city-popup popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <button class="popup__close close-popup">
+                    <img src="assets/img/icons/close-popup.svg" alt="" aria-label="presentation">
+                </button>
+                <p class="popup__title">
+                    Где вам нужна помощь?
+                </p>
+                <div class="city-popup__wrapper">
+                    <label class="city-popup__label">
+                        <input type="text" placeholder="Найдите свой город" class="city-popup__input">
+                    </label>
+                    <ul class="city-popup__list">
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Барабинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Кабардинка</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Красноармейск, Саратовская область</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                        <li class="city-popup__item">
+                            <a href="#" class="city-popup__link">Абинск</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-target="form" class="form-popup popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <button class="popup__close close-popup">
+                    <img src="assets/img/icons/close-popup-white.svg" alt="" aria-label="presentation">
+                </button>
+                <p class="popup__title">
+                    Записаться на прием к врачу
+                </p>
+                <form class="form-popup__wrapper">
+                    <div class="form-popup__fields">
+                        <label class="form-popup__label">
+                            <input type="text" placeholder="Ваше имя" class="form-popup__input form-input">
+                        </label>
+                        <label class="form-popup__label">
+                            <input type="tel" placeholder="Номер телефона" class="form-popup__input form-input">
+                        </label>
+                        <label class="form-popup__label">
+                            <textarea placeholder="Напишите сообщение врачу"
+                                class="form-popup__input form-input"></textarea>
+                        </label>
+                    </div>
+                    <button type="submit" class="form-popup__btn btn-submit">
+                        Отправить
+                    </button>
+                    <p class="form-popup__policy form-policy">
+                        Отправляя заявку, Вы даете согласие на <a href="#" class="form-policy__link">обработку
+                            персональных данных</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
