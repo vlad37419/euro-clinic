@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/build/aos.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script defer src="assets/js/build/mask.js"></script>
+    <script defer src="assets/js/build/aos.js"></script>
     <script defer src="assets/js/main.js"></script>
     <title>Главная</title>
 </head>
@@ -52,7 +54,7 @@
                                     stroke="#1C63EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </a>
-                        <button class="header__open-menu">
+                        <button class="header__open-menu open-menu">
                             <svg width="40" height="27" viewBox="0 0 40 27" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <rect width="40" height="5" rx="2.5" fill="#1C63EE" />
@@ -142,6 +144,8 @@
                                         <span class="header__navigation-tab-icon" data-src="assets/img/icons/menu-1.svg"
                                             style="-webkit-mask-image: url('assets/img/icons/menu-1.svg');mask-image: url('assets/img/icons/menu-1.svg');"></span>
                                         <span class="header__navigation-tab-text">Вывод из запоя</span>
+                                        <img src="assets/img/icons/menu-mobile-arrow.svg" alt=""
+                                            aria-label="presentation" class="header__navigation-tab-arrow">
                                     </button>
                                     <ul class="header__navigation-list">
                                         <li class="header__navigation-nav-item">
@@ -226,6 +230,8 @@
                                         <span class="header__navigation-tab-icon" data-src="assets/img/icons/menu-2.svg"
                                             style="-webkit-mask-image: url('assets/img/icons/menu-2.svg');mask-image: url('assets/img/icons/menu-2.svg');"></span>
                                         <span class="header__navigation-tab-text">Лечение алкоголизма</span>
+                                        <img src="assets/img/icons/menu-mobile-arrow.svg" alt=""
+                                            aria-label="presentation" class="header__navigation-tab-arrow">
                                     </button>
                                     <ul class="header__navigation-list">
                                         <li class="header__navigation-nav-item">
@@ -536,6 +542,8 @@
                                             style="-webkit-mask-image: url('assets/img/icons/menu-3.svg');mask-image: url('assets/img/icons/menu-3.svg');"></span>
                                         <span class="header__navigation-tab-text">Кодирование
                                             от алкоголизма</span>
+                                        <img src="assets/img/icons/menu-mobile-arrow.svg" alt=""
+                                            aria-label="presentation" class="header__navigation-tab-arrow">
                                     </button>
                                     <ul class="header__navigation-list">
                                         <li class="header__navigation-nav-item">
@@ -620,6 +628,8 @@
                                         <span class="header__navigation-tab-icon" data-src="assets/img/icons/menu-4.svg"
                                             style="-webkit-mask-image: url('assets/img/icons/menu-4.svg');mask-image: url('assets/img/icons/menu-4.svg');"></span>
                                         <span class="header__navigation-tab-text">Наркологическая помощь</span>
+                                        <img src="assets/img/icons/menu-mobile-arrow.svg" alt=""
+                                            aria-label="presentation" class="header__navigation-tab-arrow">
                                     </button>
                                     <ul class="header__navigation-list">
                                         <li class="header__navigation-nav-item">
@@ -704,6 +714,8 @@
                                         <span class="header__navigation-tab-icon" data-src="assets/img/icons/menu-5.svg"
                                             style="-webkit-mask-image: url('assets/img/icons/menu-5.svg');mask-image: url('assets/img/icons/menu-5.svg');"></span>
                                         <span class="header__navigation-tab-text">Лечение наркомании</span>
+                                        <img src="assets/img/icons/menu-mobile-arrow.svg" alt=""
+                                            aria-label="presentation" class="header__navigation-tab-arrow">
                                     </button>
                                     <ul class="header__navigation-list">
                                         <li class="header__navigation-nav-item">
@@ -788,6 +800,8 @@
                                         <span class="header__navigation-tab-icon" data-src="assets/img/icons/menu-6.svg"
                                             style="-webkit-mask-image: url('assets/img/icons/menu-6.svg');mask-image: url('assets/img/icons/menu-6.svg');"></span>
                                         <span class="header__navigation-tab-text">Реабилитационный центр</span>
+                                        <img src="assets/img/icons/menu-mobile-arrow.svg" alt=""
+                                            aria-label="presentation" class="header__navigation-tab-arrow">
                                     </button>
                                     <ul class="header__navigation-list">
                                         <li class="header__navigation-nav-item">
@@ -921,10 +935,432 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="header__bottom-mobile">
+                    <button class="header__mobile-btn btn popup-btn" data-path="form">
+                        Записаться на прием
+                    </button>
+                    <div class="header__mobile-wrapper">
+                        <div class="header__mobile-connection">
+                            <button class="header__mobile-address popup-btn" data-path="city">
+                                <svg class="header__mobile-address-icon" width="18" height="21" viewBox="0 0 18 21"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6 9.28991C6 10.0647 6.31607 10.8077 6.87868 11.3556C7.44129 11.9034 8.20435 12.2112 9 12.2112C9.79565 12.2112 10.5587 11.9034 11.1213 11.3556C11.6839 10.8077 12 10.0647 12 9.28991C12 8.51513 11.6839 7.77208 11.1213 7.22422C10.5587 6.67637 9.79565 6.36859 9 6.36859C8.20435 6.36859 7.44129 6.67637 6.87868 7.22422C6.31607 7.77208 6 8.51513 6 9.28991Z"
+                                        stroke="white" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M14.657 14.7985L10.414 18.9303C10.039 19.2951 9.53058 19.5 9.0005 19.5C8.47042 19.5 7.96201 19.2951 7.587 18.9303L3.343 14.7985C2.22422 13.7091 1.46234 12.321 1.15369 10.8098C0.845043 9.2987 1.00349 7.73237 1.60901 6.30892C2.21452 4.88547 3.2399 3.66884 4.55548 2.81286C5.87107 1.95688 7.41777 1.5 9 1.5C10.5822 1.5 12.1289 1.95688 13.4445 2.81286C14.7601 3.66884 15.7855 4.88547 16.391 6.30892C16.9965 7.73237 17.155 9.2987 16.8463 10.8098C16.5377 12.321 15.7758 13.7091 14.657 14.7985Z"
+                                        stroke="white" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <span class="header__mobile-address-text">
+                                    Краснодар
+                                </span>
+                            </button>
+                            <div class="header__mobile-phones">
+                                <a href="tel:89282923058" class="header__mobile-phone">8 (928) 292-30-58</a>
+                                <a href="tel:89282923058" class="header__mobile-phone">8 (928) 292-30-58</a>
+                            </div>
+                        </div>
+                        <ul class="header__mobile-socials socials">
+                            <li class="socials__item social">
+                                <a href="#" target="_blank" class="social__link">
+                                    <svg width="37" height="41" viewBox="0 0 37 41" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.5 0.5C8.26333 0.5 0 8.875 0 19.25C0 23.5 1.35667 27.5 3.94667 30.75L1.35667 38.75C1.23333 39.25 1.35667 39.75 1.72667 40.125C1.85 40.375 2.22 40.5 2.46667 40.5C2.59 40.5 2.83667 40.5 2.96 40.375L11.47 36.5C13.69 37.5 16.0333 38 18.5 38C28.7367 38 37 29.625 37 19.25C37 8.875 28.7367 0.5 18.5 0.5Z"
+                                            fill="#25D366" />
+                                        <path
+                                            d="M29.23 26.125C28.7367 27.625 26.8867 28.875 25.2833 29.125C24.9133 29.25 24.5433 29.25 24.05 29.25C23.0633 29.25 21.5833 29 18.9933 27.875C16.0333 26.625 13.0733 24 10.73 20.625V20.5C9.99 19.375 8.63333 17.25 8.63333 15C8.63333 12.25 9.99 10.875 10.4833 10.25C11.1 9.625 11.9633 9.25 12.95 9.25C13.1967 9.25 13.32 9.25 13.5667 9.25C14.43 9.25 15.0467 9.5 15.6633 10.75L16.1567 11.75C16.5267 12.75 17.02 13.875 17.1433 14C17.5133 14.75 17.5133 15.375 17.1433 16C17.02 16.375 16.7733 16.625 16.5267 16.875C16.4033 17.125 16.28 17.25 16.1567 17.25C16.0333 17.375 16.0333 17.375 15.91 17.5C16.28 18.125 17.02 19.25 18.0067 20.125C19.4867 21.5 20.5967 21.875 21.2133 22.125C21.46 21.875 21.7067 21.375 22.0767 21L22.2 20.75C22.8167 19.875 23.8033 19.625 24.79 20C25.2833 20.25 27.9967 21.5 27.9967 21.5L28.2433 21.625C28.6133 21.875 29.1067 22 29.3533 22.5C29.8467 23.625 29.4767 25.25 29.23 26.125Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item social">
+                                <a href="#" target="_blank" class="social__link">
+                                    <svg width="40" height="41" viewBox="0 0 40 41" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20 0.5C8.95422 0.5 0 9.45422 0 20.5C0 31.5458 8.95422 40.5 20 40.5C31.0458 40.5 40 31.5458 40 20.5C40 9.45422 31.0458 0.5 20 0.5Z"
+                                            fill="#40B3E0" />
+                                        <path
+                                            d="M29.7317 12.0048L26.1595 30.0153C26.1595 30.0153 25.6599 31.2643 24.286 30.6648L16.0426 24.3448L13.0451 22.8961L7.99916 21.1973C7.99916 21.1973 7.22478 20.9226 7.14978 20.3231C7.07494 19.7236 8.02416 19.3989 8.02416 19.3989L28.0829 11.5301C28.0829 11.5301 29.7317 10.8057 29.7317 12.0048Z"
+                                            fill="white" />
+                                        <path
+                                            d="M15.409 29.813C15.409 29.813 15.1684 29.7905 14.8686 28.8412C14.5689 27.892 13.0451 22.896 13.0451 22.896L25.1603 15.2023C25.1603 15.2023 25.8598 14.7776 25.8348 15.2023C25.8348 15.2023 25.9597 15.2771 25.585 15.6268C25.2103 15.9766 16.0676 24.1949 16.0676 24.1949"
+                                            fill="#D2E5F1" />
+                                        <path
+                                            d="M19.2034 26.768L15.9427 29.7408C15.9427 29.7408 15.6879 29.9343 15.409 29.813L16.0334 24.291"
+                                            fill="#B5CFE4" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
-    <main class="main"></main>
+    <main class="main">
+        <section class="promo section-offset">
+            <div class="promo__container container">
+                <h1 class="promo__title page-title page-title_center">
+                    Наркологическая клиника Евро-Клиник
+                </h1>
+                <p class="promo__descr">
+                    Поможем справиться с тягой к алкоголю и наркотикам. Обратившись за помощью, вы получите первичную
+                    онлайн-консультацию и психологическую поддержку
+                </p>
+                <div class="promo__services">
+                    <a href="#" class="promo__service">
+                        Вывод из запоя на дому
+                    </a>
+                    <a href="#" class="promo__service">
+                        Лечение алкоголизма на дому
+                    </a>
+                    <a href="#" class="promo__service">
+                        Нарколог на дом
+                    </a>
+                    <a href="#" class="promo__service">
+                        Лечение наркомании
+                    </a>
+                    <a href="#" class="promo__service">
+                        Принудительное кодирование
+                    </a>
+                    <a href="#" class="promo__service">
+                        Психиатрия
+                    </a>
+                </div>
+                <div class="promo__advantages">
+                    <p class="promo__advantage">
+                        Сертифицированные лекарственные средства
+                    </p>
+                    <p class="promo__advantage">
+                        Больше 15 лет спасаем жизни
+                    </p>
+                    <p class="promo__advantage">
+                        Гарантируем сохранение анонимности
+                    </p>
+                    <p class="promo__advantage">
+                        Оплата услуг любым удобным способом
+                    </p>
+                    <p class="promo__advantage">
+                        Лечим все виды зависимостей
+                    </p>
+                    <p class="promo__advantage">
+                        Помогаем круглосуточно
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="prices" data-aos="fade-up" data-aos-duration="600">
+            <div class="prices__container container">
+                <h2 class="prices__title section-title">
+                    Стоимость услуг
+                </h2>
+                <div class="prices__wrapper">
+                    <div class="prices__item price" data-aos="fade-up" data-aos-duration="600">
+                        <div class="price__info">
+                            <p class="price__title">
+                                Снятие симптомов похмелья и запоя
+                            </p>
+                            <p class="price__text">
+                                Ясность нашей позиции очевидна: постоянное информационно-пропагандистское обеспечение
+                                нашей деятельности требует от нас анализа первоочередных требований. Таким образом,
+                                постоянный количественный рост и сфера нашей активности предоставляет широкие
+                                возможности для глубокомысленных рассуждений!
+                            </p>
+                        </div>
+                        <div class="price__send">
+                            <p class="price__num">
+                                от 2900₽
+                            </p>
+                            <button class="price__btn btn popup-btn" data-path="form"
+                                data-title="Снятие симптомов похмелья и запоя">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="prices__item price" data-aos="fade-up" data-aos-duration="600">
+                        <div class="price__info">
+                            <p class="price__title">
+                                Снятие симптомов похмелья и запоя
+                            </p>
+                            <p class="price__text">
+                                Ясность нашей позиции очевидна: постоянное информационно-пропагандистское обеспечение
+                                нашей деятельности требует от нас анализа первоочередных требований. Таким образом,
+                                постоянный количественный рост и сфера нашей активности предоставляет широкие
+                                возможности для глубокомысленных рассуждений!
+                            </p>
+                        </div>
+                        <div class="price__send">
+                            <p class="price__num">
+                                от 2900₽
+                            </p>
+                            <button class="price__btn btn popup-btn" data-path="form"
+                                data-title="Снятие симптомов похмелья и запоя">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="prices__item price" data-aos="fade-up" data-aos-duration="600">
+                        <div class="price__info">
+                            <p class="price__title">
+                                Снятие симптомов похмелья и запоя
+                            </p>
+                            <p class="price__text">
+                                Ясность нашей позиции очевидна: постоянное информационно-пропагандистское обеспечение
+                                нашей деятельности требует от нас анализа первоочередных требований. Таким образом,
+                                постоянный количественный рост и сфера нашей активности предоставляет широкие
+                                возможности для глубокомысленных рассуждений!
+                            </p>
+                        </div>
+                        <div class="price__send">
+                            <p class="price__num">
+                                от 2900₽
+                            </p>
+                            <button class="price__btn btn popup-btn" data-path="form"
+                                data-title="Снятие симптомов похмелья и запоя">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="prices__item price" data-aos="fade-up" data-aos-duration="600">
+                        <div class="price__info">
+                            <p class="price__title">
+                                Снятие симптомов похмелья и запоя
+                            </p>
+                            <p class="price__text">
+                                Ясность нашей позиции очевидна: постоянное информационно-пропагандистское обеспечение
+                                нашей деятельности требует от нас анализа первоочередных требований. Таким образом,
+                                постоянный количественный рост и сфера нашей активности предоставляет широкие
+                                возможности для глубокомысленных рассуждений!
+                            </p>
+                        </div>
+                        <div class="price__send">
+                            <p class="price__num">
+                                от 2900₽
+                            </p>
+                            <button class="price__btn btn popup-btn" data-path="form"
+                                data-title="Снятие симптомов похмелья и запоя">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="prices__item price" data-aos="fade-up" data-aos-duration="600">
+                        <div class="price__info">
+                            <p class="price__title">
+                                Снятие симптомов похмелья и запоя
+                            </p>
+                            <p class="price__text">
+                                Ясность нашей позиции очевидна: постоянное информационно-пропагандистское обеспечение
+                                нашей деятельности требует от нас анализа первоочередных требований. Таким образом,
+                                постоянный количественный рост и сфера нашей активности предоставляет широкие
+                                возможности для глубокомысленных рассуждений!
+                            </p>
+                        </div>
+                        <div class="price__send">
+                            <p class="price__num">
+                                от 2900₽
+                            </p>
+                            <button class="price__btn btn popup-btn" data-path="form"
+                                data-title="Снятие симптомов похмелья и запоя">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="prices__item price" data-aos="fade-up" data-aos-duration="600">
+                        <div class="price__info">
+                            <p class="price__title">
+                                Снятие симптомов похмелья и запоя
+                            </p>
+                            <p class="price__text">
+                                Ясность нашей позиции очевидна: постоянное информационно-пропагандистское обеспечение
+                                нашей деятельности требует от нас анализа первоочередных требований. Таким образом,
+                                постоянный количественный рост и сфера нашей активности предоставляет широкие
+                                возможности для глубокомысленных рассуждений!
+                            </p>
+                        </div>
+                        <div class="price__send">
+                            <p class="price__num">
+                                от 2900₽
+                            </p>
+                            <button class="price__btn btn popup-btn" data-path="form"
+                                data-title="Снятие симптомов похмелья и запоя">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="consultation section-offset" data-aos="fade-up" data-aos-duration="600">
+            <div class="consultation__container container">
+                <div class="consultation__wrapper">
+                    <p class="consultation__title">
+                        Обратиться за помощью к нашим специалистам
+                    </p>
+                    <form class="consultation__form form">
+                        <div class="consultation__form-wrapper">
+                            <label class="consultation__form-label">
+                                <input type="text" placeholder="Ваше имя" class="consultation__form-input form-input">
+                            </label>
+                            <label class="consultation__form-label">
+                                <input type="tel" placeholder="Номер телефона"
+                                    class="consultation__form-input form-input">
+                            </label>
+                            <button type="submit" class="consultation__form-btn btn-submit">
+                                Отправить
+                            </button>
+                        </div>
+                        <p class="consultation__form-policy form-policy">
+                            Отправляя заявку, Вы даете согласие на <a href="#" class="form-policy__link">обработку
+                                персональных данных</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <section class="text-section section-offset" data-aos="fade-up" data-aos-duration="600">
+            <div class="text-section__container container">
+                <div class="text-section__content content-body">
+                    <a href="#" class="text-section__reviewer reviewer">
+                        <div class="reviewer__info">
+                            <p class="reviewer__title">
+                                Рецензент статьи
+                            </p>
+                            <p class="reviewer__name">
+                                Калюжная М. А.
+                            </p>
+                            <p class="reviewer__role">
+                                Психиатр-нарколог
+                            </p>
+                            <div class="reviewer__date">
+                                <p class="reviewer__date-title">
+                                    Дата публикации:
+                                </p>
+                                <p class="reviewer__date-descr">
+                                    26 ноября 2023
+                                </p>
+                            </div>
+                        </div>
+                        <picture class="reviewer__picture">
+                            <img src="assets/img/reviewer.jpg" alt="" class="reviewer__img">
+                        </picture>
+                    </a>
+                    <h2>
+                        Когда необходима консультация нарколога?
+                    </h2>
+                    <p>
+                        Помощь специалиста требуется в таких случаях:
+                    </p>
+                    <ul>
+                        <li>систематическое употребление алкогольных напитков;</li>
+                        <li>периодические запои;</li>
+                        <li>наблюдаются признаки абстинентного синдрома;</li>
+                        <li>употребление наркотиков;</li>
+                        <li>изменения в психике: появляются галлюцинации, резкие перепады настроения, психозы,
+                            панические атаки, приступы агрессии и т. п</li>
+                    </ul>
+                    <h3>
+                        Как распознать зависимость?
+                    </h3>
+                    <p>
+                        Психологическая и физическая зависимость от алкоголя или наркотических веществ формируется
+                        постепенно. На начальных этапах людям успешно удается скрывать свою пагубную тягу от окружающих.
+                        Однако существует ряд тревожных симптомов, которые помогают близким увидеть проблему. Достаточно
+                        более внимательно понаблюдать за человеком.
+                    </p>
+                    <h4>
+                        К основным признакам алкоголизма относят:
+                    </h4>
+                    <ul>
+                        <li><b>нарушение координации движений</b> (нетвердая походка, дрожащие руки и т. п.);</li>
+                        <li>замедление мыслительных процессов;</li>
+                        <li>резкое улучшение настроения (возникает, если человек выпил);</li>
+                        <li><b>несвязная речь;</b></li>
+                        <li>бурное проявление эмоций;</li>
+                        <li>понижение чувствительности;</li>
+                        <li>радость сменяется угнетенностью;</li>
+                        <li>суженные зрачки;</li>
+                        <li>появляются проблемы с памятью;</li>
+                        <li>наблюдаются <b>мышечные спазмы.</b></li>
+                    </ul>
+                    <p>
+                        Кроме внешних признаков, должны настораживать и изменения в поведении. Например, внезапная
+                        просьба занять денег, беспричинная раздражительность, попытки устроить скандал. Часто из дома
+                        пропадают ценные вещи, близкие ловят пьющего на откровенной лжи. При усугублении ситуации
+                        наблюдаются неконтролируемые вспышки гнева, которые приводят к семейному насилию.
+                    </p>
+                    <h5>
+                        Наличие наркотической зависимости выдают такие симптомы:
+                    </h5>
+                    <ul>
+                        <li>бледные кожные покровы;</li>
+                        <li>замедленная речь (растянутые слога, паузы между словами и т.п.);</li>
+                        <li>помутнение радужки и кровоизлияния в белках глаз;</li>
+                        <li>расширенные и суженные зрачки;</li>
+                        <li>постоянная жажда;</li>
+                        <li>потеря аппетита или резкое его увеличение</li>
+                        <li>следы от уколов на ногах или руках (часто между пальцами на стопах);</li>
+                        <li>проблемы с усвоением новой информации;</li>
+                        <li>возбужденное состояние, сменяющееся апатией
+                            и депрессией;</li>
+                    </ul>
+                    <blockquote>
+                        Кроме внешних признаков, должны настораживать и изменения в поведении. Например, внезапная
+                        просьба занять денег, беспричинная раздражительность, попытки устроить скандал. Часто из дома
+                        пропадают ценные вещи, близкие ловят пьющего на откровенной лжи. При усугублении ситуации
+                        наблюдаются неконтролируемые вспышки гнева, которые приводят к семейному насилию.
+                    </blockquote>
+                    <h3>
+                        Виды консультаций частного нарколога
+                    </h3>
+                    <p>
+                        Проконсультироваться можно:
+                    </p>
+                    <ol>
+                        <li>
+                            <p>
+                                <b>
+                                    Онлайн или по телефону
+                                </b>
+                            </p>
+                            <p>
+                                Позволяет зависимым и их родственникам оперативно получить <a href="#">наркологическую
+                                    помощь</a> в
+                                любое время суток. Специалист скорректирует прием тех или иных препаратов, окажет
+                                психологическую поддержку.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <b>
+                                    На дому
+                                </b>
+                            </p>
+                            <p>
+                                Специалист работает с пациентом в уютной домашней обстановке и оказывает помощь:
+                                мотивация, устранение похмелья, восстанавливающая терапия. Также оказывается
+                                психологическая помощь родственникам зависимого.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <b>
+                                    Анонимный прием нарколога в клинике
+                                </b>
+                            </p>
+                            <p>
+                                Врач-нарколог проводит осмотр пациента, назначает различные диагностические мероприятия
+                                и в дальнейшем подбирает оптимальный курс терапии.
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer class="footer"></footer>
     <div data-target="city" class="city-popup popup">
         <div class="popup__body">
@@ -1056,7 +1492,7 @@
                 <p class="popup__title">
                     Записаться на прием к врачу
                 </p>
-                <form class="form-popup__wrapper">
+                <form class="form-popup__wrapper form">
                     <div class="form-popup__fields">
                         <label class="form-popup__label">
                             <input type="text" placeholder="Ваше имя" class="form-popup__input form-input">
@@ -1081,7 +1517,6 @@
         </div>
     </div>
     <div class="background-close"></div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 
 </html>

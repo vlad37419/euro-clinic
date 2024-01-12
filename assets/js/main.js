@@ -42,7 +42,19 @@
         header.style.top = '-' + headerTopHeight + 'px'
     }
 
+    function menuOpen(menuSelector) {
+        menuSelector.classList.toggle('active');
+        document.body.classList.toggle('lock');
+    }
+
+    function menuClose(menuSelector) {
+        menuSelector.classList.remove('active');
+        document.body.classList.remove('lock');
+    }
+
     document.addEventListener('DOMContentLoaded', function () {
+        const header = document.querySelector('.header');
+
         // Popups
         function popupClose(popupActive) {
             const formPopup = popupActive.querySelector('.form');
@@ -74,9 +86,12 @@
             el.addEventListener('click', function (e) {
                 const path = e.currentTarget.dataset.path;
                 const currentPopup = document.querySelector(`[data-target="${path}"]`);
-                const currentForm = currentPopup.querySelector('.form');
-                const title = el.dataset?.title || 'Получите консультацию специалиста бесплатно';
-                const additional = el.dataset?.additional || '';
+                const title = el.dataset?.title || 'Записаться на прием к врачу';
+                const popupTitle = currentPopup.querySelector('.popup__title');
+
+                if (title) {
+                    popupTitle.textContent = title;
+                }
 
                 popups.forEach(function (popup) {
                     popupClose(popup);
@@ -87,16 +102,8 @@
                     });
                 });
 
-                if (currentForm) {
-                    const formTitle = currentForm.querySelector('.form-popup__title')
-                    const addition = currentForm.querySelector('.additional__field');
-                    if (addition) {
-                        addition.value = additional;
-                    }
-                    if (formTitle && !currentForm.classList.contains('form-review')) {
-                        formTitle.textContent = title;
-                    }
-                }
+                menuClose(header);
+
                 currentPopup.classList.add('open');
                 document.body.classList.add('lock');
                 document.querySelector('html').style.paddingRight = setWidthScrollBar() + 'px';
@@ -166,6 +173,9 @@
                                 tabActiveName.closest('.tabs').classList.remove('active');
                                 document.body.classList.remove('lock');
                             }
+                            setTimeout(() => {
+                                AOS.refresh();
+                            }, 500);
                         }
                     });
                 }
@@ -331,7 +341,26 @@
             });
         }
 
+        // header menu
+        const openMenuBtns = document.querySelectorAll('.open-menu');
+        const closeMenuBtns = document.querySelectorAll('.close-menu');
+
+        openMenuBtns.forEach(function (openMenuBtn) {
+            openMenuBtn.addEventListener('click', function () {
+                menuOpen(header);
+            })
+        });
+
+        closeMenuBtns.forEach(function (closeMenuBtn) {
+            closeMenuBtn.addEventListener('click', function () {
+                menuClose(header);
+            })
+        });
+
         new Tabs().initTabs();
         initPhoneMask();
+        AOS.init({
+            once: true,
+        });
     });
 })();
