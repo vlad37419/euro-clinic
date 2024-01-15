@@ -506,6 +506,52 @@
             });
         }
 
+        // documents slider
+        const doctorsSliders = document.querySelectorAll('.doctors__slider');
+
+        if (doctorsSliders.length > 0) {
+            doctorsSliders.forEach((slider) => {
+                const doctorsSlider = new Swiper(slider, {
+                    slidesPerView: 3,
+                    spaceBetween: 120,
+                    pagination: {
+                        el: slider.closest('.slider-wrapper').querySelector('.slider-pagination'),
+                        type: 'bullets',
+                        clickable: true,
+                    },
+                    breakpoints: {
+                        0: {
+                            slidesPerView: 1.1,
+                            spaceBetween: 10,
+                        },
+                        575: {
+                            slidesPerView: 2,
+                            spaceBetween: 10,
+                        },
+                        767: {
+                            slidesPerView: 3,
+                            spaceBetween: 10,
+                        },
+                        1200: {
+                            slidesPerView: 3,
+                            spaceBetween: 120,
+                        },
+                    },
+                    navigation: {
+                        nextEl: slider.closest('.slider-wrapper').querySelector('.slider-btn_next'),
+                        prevEl: slider.closest('.slider-wrapper').querySelector('.slider-btn_prev'),
+                    },
+                    on: {
+                        slideChange: function () {
+                            setTimeout(() => {
+                                AOS.refresh();
+                            }, 500);
+                        }
+                    }
+                });
+            });
+        }
+
         // documents fancybox
         Fancybox.bind('[data-fancybox="documents"]', {
             placeFocusBack: false,
